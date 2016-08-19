@@ -63,6 +63,7 @@ class hiera (
   $extra_config       = '',
   $master_service     = $hiera::params::master_service,
 ) inherits hiera::params {
+  warning('This module (hunner/hiera) has moved; see the readme.')
   if $keysdir {
     $_keysdir = $keysdir
   } else {
